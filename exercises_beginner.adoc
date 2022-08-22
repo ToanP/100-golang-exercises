@@ -88,3 +88,4 @@ Also create a `main.go` file that acts as calling class.
 
 === Solution:
 link:005/exercise005.go[]
+link:ext005/exercise005.go[]
