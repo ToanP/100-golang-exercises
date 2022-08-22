@@ -87,5 +87,5 @@ Also create a `main.go` file that acts as calling class.
 - user `go run .` to execute considering all files in the directory
 
 === Solution:
-link:005/exercise005.go
-link:ext005/exercise005.go
+- link:005/exercise005.go[]
+- link:ext005/exercise005.go[]
