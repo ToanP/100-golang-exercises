@@ -42,7 +42,7 @@ func Ex001(low, high int) string {
 // Declare and Initial empty Slide
 func Ex001A(low, high int) (result string) {
 	numbers := []string{}
-	for i := 2000; i <= 3200; i++ {
+	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
@@ -55,7 +55,7 @@ func Ex001A(low, high int) (result string) {
 // Using Make function to create Slide with (high-low) members
 func Ex001Make(low, high int) (result string) {
 	numbers := make([]string, high-low)
-	for i := 2000; i <= 3200; i++ {
+	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
@@ -68,7 +68,7 @@ func Ex001Make(low, high int) (result string) {
 // Using new function to create Slide
 func Ex001New(low, high int) (result string) {
 	var numbers = new([]string)
-	for i := 2000; i <= 3200; i++ {
+	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {
 			*numbers = append(*numbers, strconv.Itoa(i))
 		}
