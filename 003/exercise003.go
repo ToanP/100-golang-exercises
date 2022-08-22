@@ -38,3 +38,15 @@ func Ex003(n int) map[int]int {
 	}
 	return numbers
 }
+
+// naming the return
+func Ex003A(n int) (numbers map[int]int) {
+	// create a empty map by make function
+	numbers = make(map[int]int)
+	// OR by generic map creation
+	// numbers = map[int]int{}
+	for i := 1; i <= n; i++ {
+		numbers[i] = i * i
+	}
+	return
+}
