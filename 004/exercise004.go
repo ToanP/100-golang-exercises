@@ -17,10 +17,10 @@ func main() {
 		strInput = scanner.Text()
 	}
 
-	fmt.Println(strInput)
+	// fmt.Println(strInput)
 
 	result := Ex004(strInput)
-	fmt.Printf("%T, %v\n", result, result)
+	fmt.Printf("Map is %T, %v\n", result, result)
 
 }
 
