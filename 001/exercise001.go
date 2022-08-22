@@ -31,12 +31,12 @@ func main() {
 // Declare an empty Slide
 func Ex001(low, high int) string {
 	var numbers []string
-	for i := 2000; i <= 3200; i++ {
+	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	return strings.Join(numbers, "-")
+	return strings.Join(numbers, ",")
 }
 
 // Declare and Initial empty Slide
@@ -47,7 +47,7 @@ func Ex001A(low, high int) (result string) {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	result = strings.Join(numbers, "-")
+	result = strings.Join(numbers, ",")
 	return
 
 }
@@ -60,7 +60,7 @@ func Ex001Make(low, high int) (result string) {
 			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	result = strings.Join(numbers, "-")
+	result = strings.Join(numbers, ",")
 	return
 
 }
@@ -73,7 +73,7 @@ func Ex001New(low, high int) (result string) {
 			*numbers = append(*numbers, strconv.Itoa(i))
 		}
 	}
-	result = strings.Join(*numbers, "-")
+	result = strings.Join(*numbers, ",")
 	return
 
 }
