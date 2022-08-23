@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -32,8 +33,8 @@ func Exe006(input string) []string {
 
 	for index, v := range numStrings {
 		D, _ := strconv.Atoi(strings.Trim(v, " "))
-		calculatedVal := (2 * C * D) / H
-		numbers[index] = strconv.Itoa(calculatedVal)
+		calculatedVal := math.Sqrt(float64((2 * C * D) / H))
+		numbers[index] = strconv.Itoa(int(math.Round(calculatedVal)))
 	}
 
 	return numbers
